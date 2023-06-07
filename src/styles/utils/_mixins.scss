@@ -4,3 +4,25 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin tabletLayout {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
+
+@mixin desktopLayout {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+
+  @include desktopLayout() {
+    grid-column-gap: 30px;
+  }
+}
