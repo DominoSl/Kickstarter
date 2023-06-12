@@ -1,0 +1,56 @@
+.hero {
+  // height: 100vh;
+  background-image: url(../images/header-mobile.png);
+  background-position: right 0;
+  background-size: 320px auto;
+  background-repeat: no-repeat;
+  padding-top: 282px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 3px;
+  }
+
+  &__text {
+    margin-bottom: 88px;
+    font-size: 16px;
+    line-height: 150%;
+
+    &--secondary {
+      margin-bottom: 110px;
+      font-size: 14px;
+      text-align: center;
+      line-height: 150%;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 6px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 127%;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 50px;
+      margin-inline: auto;
+      margin-bottom: 40px;
+      height: 40px;
+      background-image: url(../images/icons/icon-caliper.svg);
+      background-position: center;
+    }
+  }
+
+  &__image {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding-inline: 10px;
+  }
+}

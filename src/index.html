@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="true"
+    >
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/main.scss">
     <link
       rel="shortcut icon"
@@ -11,13 +19,66 @@
       type="image/x-icon"
     >
   </head>
-  <body>
-    <header class="header">
+  <body class="page__body">
+    <header class="header page__header">
+      <div class="container">
+        <div class="header__content">
+          <a href="#" class="header__logo">
+            <img src="./images/icons/logo.svg" alt="Crazy baby logo">
+          </a>
 
+          <a href="#menu" class="icon icon--menu header__menu">
+          </a>
+        </div>
+      </div>
     </header>
 
     <main class="main">
+      <section class="hero page__section">
+        <div class="container">
+          <div class="hero__content">
+            <h1 class="hero__title">Futuristic Wireless Speaker</h1>
 
+            <p class="hero__text">
+              Luna’s performance is balanced and smooth in all frequency ranges which makes the music both naturally pleasant and distinctly more layered.
+            </p>
+
+            <h3 class="hero__subtitle">
+              Futuristic Design
+            </h3>
+
+            <p class="hero__text--secondary">
+              To give Luna a truly flawless look, we specifically picked aircraft grade aluminum as its material and adopted both three-dimensional stretch-bending technology and a high precision cold forging technique.
+            </p>
+          </div>
+
+        </div>
+        <img
+          src="./images/futuristic-mobile.png"
+          alt="Luna images"
+          class="hero__image"
+        >
+      </section>
+
+      <section class="design page__section">
+        <div class="container">
+          <div class="design__content">
+            <h2 class="page__section-title design__title">DESIGNED FOR THE FUTURE</h2>
+
+            <img
+              src="./images/design-mobile.png"
+              alt="Designs drawing"
+              class="design__image"
+            >
+
+            <p class="design__text">
+              In 2014, a group of geeky industrial designers, engineering veterans and acoustic experts formed crazybaby. This is a bunch of passionate people who are crazy enough to think they can challenge the industry with disruptive audio products.
+            </p>
+
+            <a href="#" class="design__link">See more about us</a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
