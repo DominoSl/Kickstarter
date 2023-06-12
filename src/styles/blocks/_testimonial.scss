@@ -1,0 +1,47 @@
+.testimonial {
+  position: relative;
+  padding-top: 36px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 171px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    margin-inline: auto;
+    background-image: url(../images/icons/quote.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 143%;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__photo {
+    display: block;
+    margin-inline: auto;
+    margin-bottom: 10px;
+  }
+
+  &__name {
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: $c-black;
+  }
+  
+  &__title {
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+    color: $c-gray;
+  }
+}

@@ -4,11 +4,11 @@
   padding-bottom: 100%;
 
   background-position: center;
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
 
   &--menu {
-    background-position-y: -2px;
+    background-position-y: center;
     background-image: url(../images/icons/icon-menu.svg);
   }
 }

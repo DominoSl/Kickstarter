@@ -1,7 +1,6 @@
 .header {
-  width: 100vw;
-
   &__content {
+    box-sizing: border-box;
     padding-block: 24px;
 
     display: grid;
