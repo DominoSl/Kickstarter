@@ -1,0 +1,43 @@
+.features {
+  margin-bottom: 90px;
+
+  &__title {
+    margin-bottom: 31px;
+  }
+
+  &__slider {
+    padding: 30px 30px 178px;
+    background: url(../images/features.png) $c-light-blue;
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__feature {
+    margin-bottom: 50px;
+  }
+
+  &__slider-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+  }
+
+  &__slider-button {
+    width: 48px;
+    height: 13px;
+    cursor: pointer;
+
+    &--left {
+      background-image: url(../images/icons/icon-arrow-left.svg);
+      position: relative;
+      left: 1px;
+    }
+
+    &--right {
+      background-image: url(../images/icons/icon-arrow-right.svg);
+      position: relative;
+      right: 1px;
+    }
+  }
+}

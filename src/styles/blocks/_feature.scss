@@ -1,0 +1,40 @@
+.feature {
+  &__title {
+    margin: 0 0 20px;
+    font-size: 18px;
+    line-height: 122%;
+    text-transform: uppercase;
+    color: $c-green;
+  }
+
+  &__list {
+    box-sizing: border-box;
+    margin: 0;
+    padding-left: 18px;
+  }
+
+  &__list-item {
+    margin: 0 0 8px;
+    font-size: 14px;
+    line-height: 150%;
+    color: $c-black;
+    position: relative;
+
+    &::marker {
+      content: "";
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: #000;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -15px;
+    }
+  }
+}

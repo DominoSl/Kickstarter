@@ -1,0 +1,16 @@
+.footer {
+  &__icons {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 24px);
+    grid-column-gap: 40px;
+    margin-bottom: 30px;
+  }
+
+  &__copy {
+    font-size: 14px;
+    line-height: 150%;
+    color: $c-light-gray;
+    text-align: center;
+  }
+}

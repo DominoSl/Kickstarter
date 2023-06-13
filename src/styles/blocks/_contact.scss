@@ -1,0 +1,53 @@
+.contact {
+  &__title {
+    margin: 0 0 28px;
+  }
+
+  &__field {
+    box-sizing: border-box;
+    display: block;
+    height: 48px;
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #828282;
+
+    &::placeholder {
+      color: $c-light-gray;
+    }
+
+    &--text-area {
+      margin-bottom: 30px;
+      height: 128px;
+      resize: vertical;
+    }
+  }
+
+  &__submit-button {
+    display: block;
+    box-sizing: border-box;
+    background-color: $c-blue;
+    height: 40px;
+    width: 102px;
+    border: 2px solid $c-blue;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 117%;
+    color: #fff;
+
+    text-transform: uppercase;
+
+    &:hover {
+      border-color: $c-green;
+    }
+
+    &:active {
+      background-color: #fff;
+      border-color: $c-blue;
+      color: $c-blue;
+    }
+  }
+}
