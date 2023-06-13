@@ -8,8 +8,11 @@
   background-repeat: no-repeat;
 
   &--menu {
-    background-position-y: center;
     background-image: url(../images/icons/icon-menu.svg);
+  }
+
+  &--close {
+    background-image: url(../images/icons/icon-close.svg);
   }
 
   &--facebook {

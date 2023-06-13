@@ -1,0 +1,44 @@
+body {
+  transition: transform 300ms;
+}
+
+body:has(.menu:target) {
+  transform: translateX(100%);
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.menu {
+  background-color: $c-white;
+  inset: 0;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  transform: translateX(-100%);
+  transition: transform 300ms;
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    &:first-child {
+      font-weight: 700;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 143%;
+    color: $c-black;
+    text-transform: uppercase;
+  }
+}
